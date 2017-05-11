@@ -5,10 +5,6 @@
     font-family: 'Josefin Sans', Century Gothic, Arial, sans-serif;
 }
 
-/*h1 {
-    font-family: 'Josefin Sans', Century Gothic, Arial, sans-serif;
-}*/
-
 body {
     width: 90%;
     margin: 5em auto 5em auto;
@@ -36,4 +32,32 @@ body {
 #footer-text {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.carousel {
+    margin-left: -100px;
+    margin-right: -100px;
+    max-height: 500px;
+    overflow: hidden;
+}
+.carousel-inner .item{
+    max-height: 500px;
+}
+.carousel-caption {
+    background-color: black;
+    background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,0));
+    background: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,0));
+    background: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,0));
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,0));
+    color: white;
+}
+.item img {
+    margin: auto;
+    horizontal-align: middle;
+}
+.name {
+    font-size: 2em;
+}
+.prof {
+    font-size: 1.5em;
 }
