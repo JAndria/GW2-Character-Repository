@@ -1,39 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @character.name %>
-</p>
+<div class="container-fluid">
+  <h1><%= @character.name %></h1>
+  <h3>Level <%= @character.level %> | <%= @character.profession %></h3>
 
-<p>
-  <strong>Level:</strong>
-  <%= @character.level %>
-</p>
 
-<p>
-  <strong>Gender:</strong>
-  <%= @character.gender %>
-</p>
+  <div class="col-md-4 col-xs-12 img-box">
+    <%= image_tag(@character.image_url, class: "img-responsive charac-img" ) %>
+  </div>
+  <div class="col-md-8 col-xs-12 info">
+    <p><strong>Race:</strong> <%= @character.race %></p>
+    <p><strong>Gender:</strong> <%= @character.gender %></p>
+    <hr>
+    <p><strong>Description</strong></p>
+    <p><%= @character.description %></p>
+  </div>
+</div>
 
-<p>
-  <strong>Race:</strong>
-  <%= @character.race %>
-</p>
-
-<p>
-  <strong>Profession:</strong>
-  <%= @character.profession %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @character.description %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @character.image_url %>
-</p>
+<br>
+<br>
 
 <%= link_to 'Edit', edit_character_path(@character) %> |
 <%= link_to 'Back', characters_path %>

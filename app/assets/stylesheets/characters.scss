@@ -1,20 +1,27 @@
 // Place all the styles related to the characters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .char-box {
   margin-bottom: 4em;
 }
 .charac-name {
   font-weight: 900;
   font-size: 2em;
-  font-family: 'Josefin Sans', Century Gothic, Arial, sans-serif;
 }
 .info {
   font-size: 1.25em;
+}
+.info p {
+  font-size: 1em;
 }
 .img-box {
   padding: 0;
 }
 .charac-img {
   border-radius: 10px;
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 1.5em;
 }
