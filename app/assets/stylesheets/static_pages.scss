@@ -3,8 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
     margin-top: 5em;
-    background-color: #738ca6;
     margin-bottom: 5em;
+    margin-left: 5em;
+    background-image: url("gw2_background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .brandName a {
