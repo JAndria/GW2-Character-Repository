@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :characters
   get 'static_pages/characters'
 
   get 'static_pages/about'
